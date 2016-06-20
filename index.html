@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+<body onload="show()">
+
+	<div class = "main-container">
+		<div class = "headline_main">
+			<div id = "upper">Task Tracker</div>
+			<div id = "lower">v2.0</div>
+		</div>
+		<div class = "left_container">
+			<div class = "section">Create a Task</div>
+			<form id ="form">
+				<ul>
+					<li><label>Task Name</label></li>
+					<li><input type = "text" id = "name"  placeholder="Enter Name of the task" /></li>
+					<li><label>Date</label></li>
+					<li><input type = "text" id = "date"  placeholder="Enter Date in mm/dd/yyyy" /></li>
+					<li><label>Assigned To</label></li>
+					<li><input type = "text" id = "assigned"  placeholder="Name of Asignee" /></li>
+					<li><input type="button" id ="submit" value="Submit" onclick="add()"></li>
+				</ul>
+			</form>			
+		</div>
+		<div class = "right_container">
+		<div class = "section">Existing Tasks</div>
+		<div id="myTable">
+		</div>
+	  </div>
+	</div>
+</body>
+</html>
